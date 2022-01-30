@@ -10450,6 +10450,8 @@ void idPlayer::OffsetThirdPersonView( float angle, float range, float height, bo
 	view -= range * forwardScale * renderView->viewaxis[ 0 ];
 	view += range * sideScale * renderView->viewaxis[ 1 ];
 
+	view += pm_thirdPersonOffset.GetFloat() * renderView->viewaxis[1];
+
 	if( clip )
 	{
 		// trace a ray from the origin to the viewpoint to make sure the view isn't

@@ -1346,9 +1346,12 @@ bool idPhysics_Player::CheckJump()
 	}
 
 	// must wait for jump to be released
-	if( current.movementFlags & PMF_JUMP_HELD )
-	{
-		return false;
+	// how about we autohop instead 
+	if (!pm_autoHop.GetBool()) {
+		if (current.movementFlags & PMF_JUMP_HELD)
+		{
+			return false;
+		}
 	}
 
 	// don't jump if we can't stand up

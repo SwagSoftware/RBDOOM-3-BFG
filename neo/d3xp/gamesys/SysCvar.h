@@ -189,6 +189,7 @@ extern idCVar	pm_bobup;
 extern idCVar	pm_bobpitch;
 extern idCVar	pm_bobroll;
 extern idCVar	pm_thirdPersonRange;
+extern idCVar	pm_thirdPersonOffset;
 extern idCVar	pm_thirdPersonHeight;
 extern idCVar	pm_thirdPersonAngle;
 extern idCVar	pm_thirdPersonClip;
@@ -196,6 +197,7 @@ extern idCVar	pm_thirdPerson;
 extern idCVar	pm_thirdPersonDeath;
 extern idCVar	pm_modelView;
 extern idCVar	pm_airMsec;
+extern idCVar	pm_autoHop;
 
 extern idCVar	g_showPlayerShadow;
 extern idCVar	g_showHud;
